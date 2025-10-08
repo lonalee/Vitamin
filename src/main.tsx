@@ -22,6 +22,7 @@ enableMocking()
 	.then(() => {
 		if (container) {
 			const root = createRoot(container)
+			console.log('in main')
 			root.render(
 				<StrictMode>
 					<QueryClientProvider client={queryClient}>
